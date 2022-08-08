@@ -7,3 +7,9 @@ botaoCriar.addEventListener('click', function(){
     tarefas.innerHTML = inputText.value;
     inputText.value = '';
 })
+
+let tarefasColor = document.querySelector('#lista-tarefas');
+tarefasColor.addEventListener('click', function(e){
+    e.target.style.backgroundColor = 'gray';
+
+})
