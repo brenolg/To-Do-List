@@ -10,6 +10,9 @@ botaoCriar.addEventListener('click', function(){
 
 let tarefasColor = document.querySelector('#lista-tarefas');
 tarefasColor.addEventListener('click', function(e){
-    e.target.style.backgroundColor = 'gray';
-
+    let li = document.querySelectorAll('.tarefas');
+    for(let i = 0; i < li.length; i += 1) {
+        li[i].style.backgroundColor = 'white';
+    }
+    e.target.style.backgroundColor = 'grey';
 })
