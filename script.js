@@ -16,3 +16,13 @@ tarefasColor.addEventListener('click', function(e){
     }
     e.target.style.backgroundColor = 'grey';
 })
+
+let liRiscado = document.querySelector('#lista-tarefas');
+liRiscado.addEventListener('dblclick', function(e){
+    if (e.target.classList.contains('completed')) {
+        e.target.className = 'tarefas'
+    } else {
+        e.target.className = 'tarefas completed'
+    }   
+})
+
