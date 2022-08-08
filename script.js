@@ -26,3 +26,21 @@ liRiscado.addEventListener('dblclick', function(e){
     }   
 })
 
+let btnApaga = document.querySelector('#apaga-tudo');
+btnApaga.addEventListener('click',function(){
+    let li = document.querySelectorAll('.tarefas');
+    for(let i = 0; i < li.length; i += 1) {
+        li[i].remove();
+    }
+})
+
+let btnApagaConcluidas = document.querySelector('#remover-finalizados');
+btnApagaConcluidas.addEventListener('click',function(){
+    let li = document.querySelectorAll('.completed');
+    for(let i = 0; i < li.length; i += 1) {
+        li[i].remove();
+    }
+})
+
+
+
