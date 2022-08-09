@@ -12,19 +12,17 @@ let tarefasColor = document.querySelector('#lista-tarefas');
 tarefasColor.addEventListener('click', function(e){
     let li = document.querySelectorAll('.tarefas');
     for(let i = 0; i < li.length; i += 1) {
-        li[i].style.backgroundColor = 'white';
+        li[i].className = 'tarefas';
     }
-    e.target.style.backgroundColor = 'grey';
+    e.target.className = 'selected tarefas';
 })
 
 let liRiscado = document.querySelector('#lista-tarefas');
-liRiscado.addEventListener('dblclick', function(e){
-    if (e.target.classList.contains('completed')) {
-        e.target.className = 'tarefas'
-    } else {
-        e.target.className = 'tarefas completed'
-    }   
-})
+function togle (e){
+    e.target.classList.toggle('completed');
+   
+}
+liRiscado.addEventListener('dblclick',togle)
 
 let btnApaga = document.querySelector('#apaga-tudo');
 btnApaga.addEventListener('click',function(){
@@ -40,6 +38,50 @@ btnApagaConcluidas.addEventListener('click',function(){
     for(let i = 0; i < li.length; i += 1) {
         li[i].remove();
     }
+})
+
+let btnCima = document.querySelector('#mover-cima');
+btnCima.addEventListener('click', function(){
+    let li = document.querySelectorAll('.tarefas');
+    for(let i = 0; i < li.length; i += 1) {
+        if (li[i].classList.contains('selected')){
+            let liSelect = li[i];
+        
+            let novaLi = document.createElement('li');
+            novaLi.className = 'tarefas selected'
+            novaLi.innerHTML = liSelect.innerHTML
+
+            let ol = document.querySelector('#lista-tarefas');
+            let liPosterior = li[i -1];
+            ol.insertBefore(novaLi, liPosterior);
+            liSelect.remove();
+            
+        } else {
+
+        }   
+    } 
+})
+
+let btnBaixo = document.querySelector('#mover-baixo');
+btnBaixo.addEventListener('click', function(){
+    let li = document.querySelectorAll('.tarefas');
+    for(let i = 0; i < li.length; i += 1) {
+        if (li[i].classList.contains('selected')){
+            let liSelect = li[i];
+        
+            let novaLi = document.createElement('li');
+            novaLi.className = 'tarefas selected'
+            novaLi.innerHTML = liSelect.innerHTML
+            
+            let ol = document.querySelector('#lista-tarefas');
+            let liPosterior = li[i +2];
+            ol.insertBefore(novaLi, liPosterior);
+            liSelect.remove();
+            
+        } else {
+
+        }   
+    } 
 })
 
 
