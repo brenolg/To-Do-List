@@ -84,5 +84,10 @@ btnBaixo.addEventListener('click', function(){
     } 
 })
 
+let btnRemSelect = document.querySelector('#remover-selecionado');
+btnRemSelect.addEventListener('click', function(){
+    let selected = document.querySelector('.selected');
+    selected.remove();
+})
 
 
