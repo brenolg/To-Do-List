@@ -2,20 +2,35 @@
 
 Este projeto consiste em uma aplicação web que permite ao usuário criar e gerenciar uma lista de tarefas (to do list). O usuário pode adicionar novas tarefas, marcar as tarefas concluídas, remover tarefas individuais ou todas as tarefas da lista. 
 
+<img width="100%" src="todo-list-example.gif" />
+Futura Imagem
+
+<a	href="https://brenolg.github.io-wars-planets/"
+	target="_blank"
+	rel="noopener noreferrer"> To-Do-List Page
+<a/>
+
+<br/>
+
 ## Funcionalidades
 
 - Adicionar uma nova tarefa à lista
 - Marcar uma tarefa como concluída
 - Remover uma tarefa específica da lista
 - Remover todas as tarefas da lista
+- Remover todas as tarefas concluídas da lista
 
 ## Tecnologias utilizadas
 
 - HTML
 - CSS
 - JavaScript
+-DOM manipulation
 
 ## Instalação do projeto localmente
+
+Não é necessário rodar o projeto localmente, pois ele está rodando nesse  [link](https://brenolg.github.io/star-wars-planets/).
+* ATUALIZR LINK POS INSERIR NOGHPAGES
 
 Para instalar e executar este projeto localmente, siga os seguintes passos:
 
@@ -24,7 +39,13 @@ Para instalar e executar este projeto localmente, siga os seguintes passos:
 ```javascript
   git clone git@github.com:brenolg/to-do-list.git`
 ```
-2. Abra o arquivo `index.html` em um navegador de sua preferência.
+
+2. Depois de clonar, entre na pasta do projeto e instale as dependências:
+
+```javascript
+npm install
+```
+3. Abra o arquivo `index.html` em um navegador de sua preferência.
 
 ## Requisitos do projeto
 
