@@ -3,12 +3,12 @@
 Este projeto consiste em uma aplicação web que permite ao usuário criar e gerenciar uma lista de tarefas (to do list). O usuário pode adicionar novas tarefas, marcar as tarefas concluídas, remover tarefas individuais ou todas as tarefas da lista. 
 
 <img width="100%" src="todo-list-example.gif" />
-Futura Imagem
 
-<a	href="https://brenolg.github.io-wars-planets/"
+
+<!-- <a	href="https://brenolg.github.io-wars-planets/"
 	target="_blank"
 	rel="noopener noreferrer"> To-Do-List Page
-<a/>
+<a/> -->
 
 <br/>
 
