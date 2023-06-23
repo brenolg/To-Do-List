@@ -29,9 +29,6 @@ Este projeto consiste em uma aplicação web que permite ao usuário criar e ger
 
 ## Instalação do projeto localmente
 
-Não é necessário rodar o projeto localmente, pois ele está rodando nesse  [link](https://brenolg.github.io/star-wars-planets/).
-* ATUALIZR LINK POS INSERIR NOGHPAGES
-
 Para instalar e executar este projeto localmente, siga os seguintes passos:
 
 1. Clone este repositório 
