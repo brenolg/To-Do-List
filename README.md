@@ -34,7 +34,7 @@ Para instalar e executar este projeto localmente, siga os seguintes passos:
 1. Clone este repositório 
 
 ```javascript
-  git clone git@github.com:brenolg/To-Do-List.git
+  git clone git@github.com:brenolg/To-Do-List-HTML-JS.git
 ```
 
 2. Depois de clonar, entre na pasta do projeto e instale as dependências:
